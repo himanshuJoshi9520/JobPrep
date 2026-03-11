@@ -12,7 +12,7 @@ import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 import CodingPractice from './pages/CodingPractice'
 
-export const ServerUrl  = "http://localhost:8000"
+export const ServerUrl  = "https://jobprep-backend-9rmp.onrender.com"
 
 function App() {
 
