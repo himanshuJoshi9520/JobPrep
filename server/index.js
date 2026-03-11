@@ -12,7 +12,7 @@ import questionRouter from "./routes/question.route.js"
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://jobprep-ejz8.onrender.com",
     credentials:true
 }))
 
