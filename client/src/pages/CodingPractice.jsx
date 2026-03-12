@@ -46,9 +46,9 @@ function CodingPractice() {
     const fetchQuestions = async () => {
       setLoadingQuestions(true);
       try {
-        const res = await axios.get(`http://localhost:8000/api/questions?company=${selectedCompany}`, {
-          withCredentials: true
-        });
+  const res = await axios.get(`https://jobprep-backend-9rmp.onrender.com/api/questions?company=${selectedCompany}`, {
+    withCredentials: true
+  });
         const fetchedQuestions = res.data.questions || [];
         setQuestions(fetchedQuestions);
         
