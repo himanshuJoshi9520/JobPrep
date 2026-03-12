@@ -93,11 +93,14 @@ function CodingPractice() {
     setOutput('Compiling and executing...\n');
 
     try {
-      const response = await axios.post('http://localhost:8000/api/questions/run', {
-        language: selectedLanguage,
-        code: code,
-        filename: `main.${LANGUAGES[selectedLanguage].ex}`
-      });
+  const response = await axios.post(
+    'https://jobprep-backend-9rmp.onrender.com/api/questions/run',
+    {
+      language: selectedLanguage,
+      code: code,
+      filename: `main.${LANGUAGES[selectedLanguage].ex}`
+    }
+  );
 
       const { output, error } = response.data;
       setOutput(output || 'Code executed with no output.');
